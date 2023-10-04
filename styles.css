@@ -1,0 +1,76 @@
+body {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #ecfccb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#startButton {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f43f5e;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.track {
+  width: 800px;
+  height: 300px;
+  border: 1px solid #94a3b8;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.horse {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#horse1 {
+  left: 0;
+  top: 0;
+}
+#horse2 {
+  left: 60px;
+  top: 0;
+}
+#horse3 {
+  left: 120px;
+  top: 0;
+}
+
+.finish-line {
+  width: 3px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  left: 80%;
+}
+
+#winner {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #dc2626;
+}
+
+.grass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
